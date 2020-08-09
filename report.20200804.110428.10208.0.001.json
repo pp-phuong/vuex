@@ -1,0 +1,908 @@
+
+{
+  "header": {
+    "reportVersion": 1,
+    "event": "Allocation failed - JavaScript heap out of memory",
+    "trigger": "FatalError",
+    "filename": "report.20200804.110428.10208.0.001.json",
+    "dumpEventTime": "2020-08-04T11:04:28Z",
+    "dumpEventTimeStamp": "1596513868926",
+    "processId": 10208,
+    "cwd": "D:\\S-Group\\Front-end\\Vue-js\\vue-cli",
+    "commandLine": [
+      "node",
+      "D:\\S-Group\\Front-end\\Vue-js\\vue-cli\\node_modules\\.bin\\\\..\\@vue\\cli-service\\bin\\vue-cli-service.js",
+      "serve"
+    ],
+    "nodejsVersion": "v12.16.1",
+    "wordSize": 64,
+    "arch": "x64",
+    "platform": "win32",
+    "componentVersions": {
+      "node": "12.16.1",
+      "v8": "7.8.279.23-node.31",
+      "uv": "1.34.0",
+      "zlib": "1.2.11",
+      "brotli": "1.0.7",
+      "ares": "1.15.0",
+      "modules": "72",
+      "nghttp2": "1.40.0",
+      "napi": "5",
+      "llhttp": "2.0.4",
+      "http_parser": "2.9.3",
+      "openssl": "1.1.1d",
+      "cldr": "35.1",
+      "icu": "64.2",
+      "tz": "2019c",
+      "unicode": "12.1"
+    },
+    "release": {
+      "name": "node",
+      "lts": "Erbium",
+      "headersUrl": "https://nodejs.org/download/release/v12.16.1/node-v12.16.1-headers.tar.gz",
+      "sourceUrl": "https://nodejs.org/download/release/v12.16.1/node-v12.16.1.tar.gz",
+      "libUrl": "https://nodejs.org/download/release/v12.16.1/win-x64/node.lib"
+    },
+    "osName": "Windows_NT",
+    "osRelease": "10.0.18362",
+    "osVersion": "Windows 10 Pro",
+    "osMachine": "x86_64",
+    "cpus": [
+      {
+        "model": "Intel(R) Core(TM) i5-5300U CPU @ 2.30GHz",
+        "speed": 2295,
+        "user": 6554671,
+        "nice": 0,
+        "sys": 2504250,
+        "idle": 19668484,
+        "irq": 355328
+      },
+      {
+        "model": "Intel(R) Core(TM) i5-5300U CPU @ 2.30GHz",
+        "speed": 2295,
+        "user": 5468062,
+        "nice": 0,
+        "sys": 1845937,
+        "idle": 21413218,
+        "irq": 59796
+      },
+      {
+        "model": "Intel(R) Core(TM) i5-5300U CPU @ 2.30GHz",
+        "speed": 2295,
+        "user": 6624046,
+        "nice": 0,
+        "sys": 1936812,
+        "idle": 20166359,
+        "irq": 42000
+      },
+      {
+        "model": "Intel(R) Core(TM) i5-5300U CPU @ 2.30GHz",
+        "speed": 2295,
+        "user": 6295687,
+        "nice": 0,
+        "sys": 1774765,
+        "idle": 20656765,
+        "irq": 35656
+      }
+    ],
+    "networkInterfaces": [
+      {
+        "name": "Wi-Fi",
+        "internal": false,
+        "mac": "22:96:23:fb:dd:c0",
+        "address": "2402:800:620e:3c5d:d7:754:5a5b:442d",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 0
+      },
+      {
+        "name": "Wi-Fi",
+        "internal": false,
+        "mac": "22:96:23:fb:dd:c0",
+        "address": "2402:800:620e:3c5d:78b7:edd9:286b:f974",
+        "netmask": "ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff",
+        "family": "IPv6",
+        "scopeid": 0
+      },
+      {
+        "name": "Wi-Fi",
+        "internal": false,
+        "mac": "22:96:23:fb:dd:c0",
+        "address": "2402:800:620e:3c5d:9951:3658:dd84:91b",
+        "netmask": "ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff",
+        "family": "IPv6",
+        "scopeid": 0
+      },
+      {
+        "name": "Wi-Fi",
+        "internal": false,
+        "mac": "22:96:23:fb:dd:c0",
+        "address": "fe80::d7:754:5a5b:442d",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 21
+      },
+      {
+        "name": "Wi-Fi",
+        "internal": false,
+        "mac": "22:96:23:fb:dd:c0",
+        "address": "192.168.1.198",
+        "netmask": "255.255.255.0",
+        "family": "IPv4"
+      },
+      {
+        "name": "Loopback Pseudo-Interface 1",
+        "internal": true,
+        "mac": "00:00:00:00:00:00",
+        "address": "::1",
+        "netmask": "ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff",
+        "family": "IPv6",
+        "scopeid": 0
+      },
+      {
+        "name": "Loopback Pseudo-Interface 1",
+        "internal": true,
+        "mac": "00:00:00:00:00:00",
+        "address": "127.0.0.1",
+        "netmask": "255.0.0.0",
+        "family": "IPv4"
+      }
+    ],
+    "host": "Admin"
+  },
+  "javascriptStack": {
+    "message": "No stack.",
+    "stack": [
+      "Unavailable."
+    ]
+  },
+  "nativeStack": [
+    {
+      "pc": "0x00007ff60e4519f9",
+      "symbol": "public: class std::basic_ostream<char,struct std::char_traits<char> > & __ptr64 __cdecl std::basic_ostream<char,struct std::char_traits<char> >::operator<<(__int64) __ptr64+10873"
+    },
+    {
+      "pc": "0x00007ff60e455e1c",
+      "symbol": "public: class std::basic_ostream<char,struct std::char_traits<char> > & __ptr64 __cdecl std::basic_ostream<char,struct std::char_traits<char> >::operator<<(__int64) __ptr64+28316"
+    },
+    {
+      "pc": "0x00007ff60e454dd8",
+      "symbol": "public: class std::basic_ostream<char,struct std::char_traits<char> > & __ptr64 __cdecl std::basic_ostream<char,struct std::char_traits<char> >::operator<<(__int64) __ptr64+24152"
+    },
+    {
+      "pc": "0x00007ff60e5534cb",
+      "symbol": "public: bool __cdecl v8::base::CPU::has_sse(void)const __ptr64+38363"
+    },
+    {
+      "pc": "0x00007ff60ed69f4e",
+      "symbol": "private: void __cdecl v8::Isolate::ReportExternalAllocationLimitReached(void) __ptr64+94"
+    },
+    {
+      "pc": "0x00007ff60ed52021",
+      "symbol": "public: class v8::SharedArrayBuffer::Contents __cdecl v8::SharedArrayBuffer::Externalize(void) __ptr64+833"
+    },
+    {
+      "pc": "0x00007ff60ec1e57c",
+      "symbol": "public: static void __cdecl v8::internal::Heap::EphemeronKeyWriteBarrierFromCode(unsigned __int64,unsigned __int64,class v8::internal::Isolate * __ptr64)+1436"
+    },
+    {
+      "pc": "0x00007ff60ec26521",
+      "symbol": "public: static bool __cdecl v8::internal::Heap::PageFlagsAreConsistent(class v8::internal::HeapObject)+3761"
+    },
+    {
+      "pc": "0x00007ff60ec1bb13",
+      "symbol": "public: bool __cdecl v8::internal::Heap::CollectGarbage(enum v8::internal::AllocationSpace,enum v8::internal::GarbageCollectionReason,enum v8::GCCallbackFlags) __ptr64+1283"
+    },
+    {
+      "pc": "0x00007ff60ec1a184",
+      "symbol": "public: void __cdecl v8::internal::Heap::AddRetainedMap(class v8::internal::Handle<class v8::internal::Map>) __ptr64+2452"
+    },
+    {
+      "pc": "0x00007ff60ec3b36d",
+      "symbol": "public: class v8::internal::Handle<class v8::internal::HeapObject> __cdecl v8::internal::Factory::NewFillerObject(int,bool,enum v8::internal::AllocationType,enum v8::internal::AllocationOrigin) __ptr64+61"
+    },
+    {
+      "pc": "0x00007ff60e9a0c51",
+      "symbol": "public: class v8::internal::interpreter::JumpTableTargetOffsets::iterator & __ptr64 __cdecl v8::internal::interpreter::JumpTableTargetOffsets::iterator::operator=(class v8::internal::interpreter::JumpTableTargetOffsets::iterator && __ptr64) __ptr64+1665"
+    },
+    {
+      "pc": "0x00007ff60f1b4ddd",
+      "symbol": "public: virtual bool __cdecl v8::internal::SetupIsolateDelegate::SetupHeap(class v8::internal::Heap * __ptr64) __ptr64+546637"
+    },
+    {
+      "pc": "0x00007ff60f1840a0",
+      "symbol": "public: virtual bool __cdecl v8::internal::SetupIsolateDelegate::SetupHeap(class v8::internal::Heap * __ptr64) __ptr64+346640"
+    },
+    {
+      "pc": "0x00007ff60f139d8c",
+      "symbol": "public: virtual bool __cdecl v8::internal::SetupIsolateDelegate::SetupHeap(class v8::internal::Heap * __ptr64) __ptr64+42748"
+    },
+    {
+      "pc": "0x00007ff60f1330bc",
+      "symbol": "public: virtual bool __cdecl v8::internal::SetupIsolateDelegate::SetupHeap(class v8::internal::Heap * __ptr64) __ptr64+14892"
+    },
+    {
+      "pc": "0x00007ff60f1352f7",
+      "symbol": "public: virtual bool __cdecl v8::internal::SetupIsolateDelegate::SetupHeap(class v8::internal::Heap * __ptr64) __ptr64+23655"
+    },
+    {
+      "pc": "0x00007ff60f2195c0",
+      "symbol": "public: virtual bool __cdecl v8::internal::SetupIsolateDelegate::SetupHeap(class v8::internal::Heap * __ptr64) __ptr64+958256"
+    },
+    {
+      "pc": "0x00007ff60f139d8c",
+      "symbol": "public: virtual bool __cdecl v8::internal::SetupIsolateDelegate::SetupHeap(class v8::internal::Heap * __ptr64) __ptr64+42748"
+    },
+    {
+      "pc": "0x00007ff60f139d8c",
+      "symbol": "public: virtual bool __cdecl v8::internal::SetupIsolateDelegate::SetupHeap(class v8::internal::Heap * __ptr64) __ptr64+42748"
+    },
+    {
+      "pc": "0x00007ff60f1d06e9",
+      "symbol": "public: virtual bool __cdecl v8::internal::SetupIsolateDelegate::SetupHeap(class v8::internal::Heap * __ptr64) __ptr64+659545"
+    },
+    {
+      "pc": "0x00007ff60f139d8c",
+      "symbol": "public: virtual bool __cdecl v8::internal::SetupIsolateDelegate::SetupHeap(class v8::internal::Heap * __ptr64) __ptr64+42748"
+    },
+    {
+      "pc": "0x00007ff60f139d8c",
+      "symbol": "public: virtual bool __cdecl v8::internal::SetupIsolateDelegate::SetupHeap(class v8::internal::Heap * __ptr64) __ptr64+42748"
+    },
+    {
+      "pc": "0x00007ff60f139d8c",
+      "symbol": "public: virtual bool __cdecl v8::internal::SetupIsolateDelegate::SetupHeap(class v8::internal::Heap * __ptr64) __ptr64+42748"
+    },
+    {
+      "pc": "0x00007ff60f1330bc",
+      "symbol": "public: virtual bool __cdecl v8::internal::SetupIsolateDelegate::SetupHeap(class v8::internal::Heap * __ptr64) __ptr64+14892"
+    },
+    {
+      "pc": "0x00007ff60f1352f7",
+      "symbol": "public: virtual bool __cdecl v8::internal::SetupIsolateDelegate::SetupHeap(class v8::internal::Heap * __ptr64) __ptr64+23655"
+    },
+    {
+      "pc": "0x00007ff60f2195c0",
+      "symbol": "public: virtual bool __cdecl v8::internal::SetupIsolateDelegate::SetupHeap(class v8::internal::Heap * __ptr64) __ptr64+958256"
+    },
+    {
+      "pc": "0x00007ff60f139d8c",
+      "symbol": "public: virtual bool __cdecl v8::internal::SetupIsolateDelegate::SetupHeap(class v8::internal::Heap * __ptr64) __ptr64+42748"
+    },
+    {
+      "pc": "0x00007ff60f139d8c",
+      "symbol": "public: virtual bool __cdecl v8::internal::SetupIsolateDelegate::SetupHeap(class v8::internal::Heap * __ptr64) __ptr64+42748"
+    },
+    {
+      "pc": "0x00007ff60f1d06e9",
+      "symbol": "public: virtual bool __cdecl v8::internal::SetupIsolateDelegate::SetupHeap(class v8::internal::Heap * __ptr64) __ptr64+659545"
+    },
+    {
+      "pc": "0x00007ff60f139d8c",
+      "symbol": "public: virtual bool __cdecl v8::internal::SetupIsolateDelegate::SetupHeap(class v8::internal::Heap * __ptr64) __ptr64+42748"
+    },
+    {
+      "pc": "0x00007ff60f139d8c",
+      "symbol": "public: virtual bool __cdecl v8::internal::SetupIsolateDelegate::SetupHeap(class v8::internal::Heap * __ptr64) __ptr64+42748"
+    },
+    {
+      "pc": "0x00007ff60f139d8c",
+      "symbol": "public: virtual bool __cdecl v8::internal::SetupIsolateDelegate::SetupHeap(class v8::internal::Heap * __ptr64) __ptr64+42748"
+    },
+    {
+      "pc": "0x00007ff60f139d8c",
+      "symbol": "public: virtual bool __cdecl v8::internal::SetupIsolateDelegate::SetupHeap(class v8::internal::Heap * __ptr64) __ptr64+42748"
+    },
+    {
+      "pc": "0x00007ff60f1d06e9",
+      "symbol": "public: virtual bool __cdecl v8::internal::SetupIsolateDelegate::SetupHeap(class v8::internal::Heap * __ptr64) __ptr64+659545"
+    },
+    {
+      "pc": "0x00007ff60f139d8c",
+      "symbol": "public: virtual bool __cdecl v8::internal::SetupIsolateDelegate::SetupHeap(class v8::internal::Heap * __ptr64) __ptr64+42748"
+    },
+    {
+      "pc": "0x00007ff60f139d8c",
+      "symbol": "public: virtual bool __cdecl v8::internal::SetupIsolateDelegate::SetupHeap(class v8::internal::Heap * __ptr64) __ptr64+42748"
+    },
+    {
+      "pc": "0x00007ff60f139d8c",
+      "symbol": "public: virtual bool __cdecl v8::internal::SetupIsolateDelegate::SetupHeap(class v8::internal::Heap * __ptr64) __ptr64+42748"
+    },
+    {
+      "pc": "0x00007ff60f139d8c",
+      "symbol": "public: virtual bool __cdecl v8::internal::SetupIsolateDelegate::SetupHeap(class v8::internal::Heap * __ptr64) __ptr64+42748"
+    },
+    {
+      "pc": "0x00007ff60f139d8c",
+      "symbol": "public: virtual bool __cdecl v8::internal::SetupIsolateDelegate::SetupHeap(class v8::internal::Heap * __ptr64) __ptr64+42748"
+    },
+    {
+      "pc": "0x00007ff60f1330bc",
+      "symbol": "public: virtual bool __cdecl v8::internal::SetupIsolateDelegate::SetupHeap(class v8::internal::Heap * __ptr64) __ptr64+14892"
+    },
+    {
+      "pc": "0x00007ff60f139d8c",
+      "symbol": "public: virtual bool __cdecl v8::internal::SetupIsolateDelegate::SetupHeap(class v8::internal::Heap * __ptr64) __ptr64+42748"
+    },
+    {
+      "pc": "0x00007ff60f139d8c",
+      "symbol": "public: virtual bool __cdecl v8::internal::SetupIsolateDelegate::SetupHeap(class v8::internal::Heap * __ptr64) __ptr64+42748"
+    },
+    {
+      "pc": "0x00007ff60f139d8c",
+      "symbol": "public: virtual bool __cdecl v8::internal::SetupIsolateDelegate::SetupHeap(class v8::internal::Heap * __ptr64) __ptr64+42748"
+    },
+    {
+      "pc": "0x00007ff60f139d8c",
+      "symbol": "public: virtual bool __cdecl v8::internal::SetupIsolateDelegate::SetupHeap(class v8::internal::Heap * __ptr64) __ptr64+42748"
+    },
+    {
+      "pc": "0x00007ff60f1330bc",
+      "symbol": "public: virtual bool __cdecl v8::internal::SetupIsolateDelegate::SetupHeap(class v8::internal::Heap * __ptr64) __ptr64+14892"
+    },
+    {
+      "pc": "0x00007ff60f139d8c",
+      "symbol": "public: virtual bool __cdecl v8::internal::SetupIsolateDelegate::SetupHeap(class v8::internal::Heap * __ptr64) __ptr64+42748"
+    },
+    {
+      "pc": "0x00007ff60f139d8c",
+      "symbol": "public: virtual bool __cdecl v8::internal::SetupIsolateDelegate::SetupHeap(class v8::internal::Heap * __ptr64) __ptr64+42748"
+    },
+    {
+      "pc": "0x00007ff60f139d8c",
+      "symbol": "public: virtual bool __cdecl v8::internal::SetupIsolateDelegate::SetupHeap(class v8::internal::Heap * __ptr64) __ptr64+42748"
+    },
+    {
+      "pc": "0x00007ff60f1c6fcc",
+      "symbol": "public: virtual bool __cdecl v8::internal::SetupIsolateDelegate::SetupHeap(class v8::internal::Heap * __ptr64) __ptr64+620860"
+    },
+    {
+      "pc": "0x00007ff60f139d8c",
+      "symbol": "public: virtual bool __cdecl v8::internal::SetupIsolateDelegate::SetupHeap(class v8::internal::Heap * __ptr64) __ptr64+42748"
+    },
+    {
+      "pc": "0x00007ff60f1330bc",
+      "symbol": "public: virtual bool __cdecl v8::internal::SetupIsolateDelegate::SetupHeap(class v8::internal::Heap * __ptr64) __ptr64+14892"
+    },
+    {
+      "pc": "0x00007ff60f139d8c",
+      "symbol": "public: virtual bool __cdecl v8::internal::SetupIsolateDelegate::SetupHeap(class v8::internal::Heap * __ptr64) __ptr64+42748"
+    },
+    {
+      "pc": "0x00007ff60f139d8c",
+      "symbol": "public: virtual bool __cdecl v8::internal::SetupIsolateDelegate::SetupHeap(class v8::internal::Heap * __ptr64) __ptr64+42748"
+    },
+    {
+      "pc": "0x00007ff60f139d8c",
+      "symbol": "public: virtual bool __cdecl v8::internal::SetupIsolateDelegate::SetupHeap(class v8::internal::Heap * __ptr64) __ptr64+42748"
+    },
+    {
+      "pc": "0x00007ff60f139d8c",
+      "symbol": "public: virtual bool __cdecl v8::internal::SetupIsolateDelegate::SetupHeap(class v8::internal::Heap * __ptr64) __ptr64+42748"
+    },
+    {
+      "pc": "0x00007ff60f139d8c",
+      "symbol": "public: virtual bool __cdecl v8::internal::SetupIsolateDelegate::SetupHeap(class v8::internal::Heap * __ptr64) __ptr64+42748"
+    },
+    {
+      "pc": "0x00007ff60f1c6fcc",
+      "symbol": "public: virtual bool __cdecl v8::internal::SetupIsolateDelegate::SetupHeap(class v8::internal::Heap * __ptr64) __ptr64+620860"
+    },
+    {
+      "pc": "0x00007ff60f139d8c",
+      "symbol": "public: virtual bool __cdecl v8::internal::SetupIsolateDelegate::SetupHeap(class v8::internal::Heap * __ptr64) __ptr64+42748"
+    },
+    {
+      "pc": "0x00007ff60f139d8c",
+      "symbol": "public: virtual bool __cdecl v8::internal::SetupIsolateDelegate::SetupHeap(class v8::internal::Heap * __ptr64) __ptr64+42748"
+    },
+    {
+      "pc": "0x00007ff60f139d8c",
+      "symbol": "public: virtual bool __cdecl v8::internal::SetupIsolateDelegate::SetupHeap(class v8::internal::Heap * __ptr64) __ptr64+42748"
+    },
+    {
+      "pc": "0x00007ff60f1d06e9",
+      "symbol": "public: virtual bool __cdecl v8::internal::SetupIsolateDelegate::SetupHeap(class v8::internal::Heap * __ptr64) __ptr64+659545"
+    },
+    {
+      "pc": "0x00007ff60f139d8c",
+      "symbol": "public: virtual bool __cdecl v8::internal::SetupIsolateDelegate::SetupHeap(class v8::internal::Heap * __ptr64) __ptr64+42748"
+    },
+    {
+      "pc": "0x00007ff60f139d8c",
+      "symbol": "public: virtual bool __cdecl v8::internal::SetupIsolateDelegate::SetupHeap(class v8::internal::Heap * __ptr64) __ptr64+42748"
+    },
+    {
+      "pc": "0x00007ff60f139d8c",
+      "symbol": "public: virtual bool __cdecl v8::internal::SetupIsolateDelegate::SetupHeap(class v8::internal::Heap * __ptr64) __ptr64+42748"
+    },
+    {
+      "pc": "0x00007ff60f139d8c",
+      "symbol": "public: virtual bool __cdecl v8::internal::SetupIsolateDelegate::SetupHeap(class v8::internal::Heap * __ptr64) __ptr64+42748"
+    },
+    {
+      "pc": "0x00007ff60f139d8c",
+      "symbol": "public: virtual bool __cdecl v8::internal::SetupIsolateDelegate::SetupHeap(class v8::internal::Heap * __ptr64) __ptr64+42748"
+    },
+    {
+      "pc": "0x00007ff60f139d8c",
+      "symbol": "public: virtual bool __cdecl v8::internal::SetupIsolateDelegate::SetupHeap(class v8::internal::Heap * __ptr64) __ptr64+42748"
+    },
+    {
+      "pc": "0x00007ff60f139d8c",
+      "symbol": "public: virtual bool __cdecl v8::internal::SetupIsolateDelegate::SetupHeap(class v8::internal::Heap * __ptr64) __ptr64+42748"
+    },
+    {
+      "pc": "0x00007ff60f139d8c",
+      "symbol": "public: virtual bool __cdecl v8::internal::SetupIsolateDelegate::SetupHeap(class v8::internal::Heap * __ptr64) __ptr64+42748"
+    },
+    {
+      "pc": "0x00007ff60f139d8c",
+      "symbol": "public: virtual bool __cdecl v8::internal::SetupIsolateDelegate::SetupHeap(class v8::internal::Heap * __ptr64) __ptr64+42748"
+    },
+    {
+      "pc": "0x00007ff60f1330bc",
+      "symbol": "public: virtual bool __cdecl v8::internal::SetupIsolateDelegate::SetupHeap(class v8::internal::Heap * __ptr64) __ptr64+14892"
+    },
+    {
+      "pc": "0x00007ff60f139d8c",
+      "symbol": "public: virtual bool __cdecl v8::internal::SetupIsolateDelegate::SetupHeap(class v8::internal::Heap * __ptr64) __ptr64+42748"
+    },
+    {
+      "pc": "0x00007ff60f1330bc",
+      "symbol": "public: virtual bool __cdecl v8::internal::SetupIsolateDelegate::SetupHeap(class v8::internal::Heap * __ptr64) __ptr64+14892"
+    },
+    {
+      "pc": "0x00007ff60f139d8c",
+      "symbol": "public: virtual bool __cdecl v8::internal::SetupIsolateDelegate::SetupHeap(class v8::internal::Heap * __ptr64) __ptr64+42748"
+    },
+    {
+      "pc": "0x00007ff60f1372c1",
+      "symbol": "public: virtual bool __cdecl v8::internal::SetupIsolateDelegate::SetupHeap(class v8::internal::Heap * __ptr64) __ptr64+31793"
+    },
+    {
+      "pc": "0x00007ff60f136eac",
+      "symbol": "public: virtual bool __cdecl v8::internal::SetupIsolateDelegate::SetupHeap(class v8::internal::Heap * __ptr64) __ptr64+30748"
+    },
+    {
+      "pc": "0x00007ff60ec77c33",
+      "symbol": "public: static void __cdecl v8::internal::Execution::CallWasm(class v8::internal::Isolate * __ptr64,class v8::internal::Handle<class v8::internal::Code>,unsigned __int64,class v8::internal::Handle<class v8::internal::Object>,unsigned __int64)+1395"
+    },
+    {
+      "pc": "0x00007ff60ec775b6",
+      "symbol": "public: static class v8::internal::MaybeHandle<class v8::internal::Object> __cdecl v8::internal::Execution::Call(class v8::internal::Isolate * __ptr64,class v8::internal::Handle<class v8::internal::Object>,class v8::internal::Handle<class v8::internal::Object>,int,class v8::internal::Handle<class v8::internal::Object> * __ptr64 const)+182"
+    },
+    {
+      "pc": "0x00007ff60ed4862d",
+      "symbol": "public: class v8::MaybeLocal<class v8::Value> __cdecl v8::Function::Call(class v8::Local<class v8::Context>,class v8::Local<class v8::Value>,int,class v8::Local<class v8::Value> * __ptr64 const) __ptr64+605"
+    },
+    {
+      "pc": "0x00007ff60e5cfc28",
+      "symbol": "public: __cdecl node::CallbackScope::~CallbackScope(void) __ptr64+1448"
+    },
+    {
+      "pc": "0x00007ff60e5c8d33",
+      "symbol": "public: enum v8::internal::interpreter::OperandScale __cdecl v8::internal::interpreter::BytecodeNode::operand_scale(void)const __ptr64+179"
+    },
+    {
+      "pc": "0x00007ff60e54f433",
+      "symbol": "public: bool __cdecl v8::base::CPU::has_sse(void)const __ptr64+21827"
+    },
+    {
+      "pc": "0x00007ff60e544d87",
+      "symbol": "public: class v8::internal::FeedbackVectorSpec * __ptr64 __cdecl v8::internal::UnoptimizedCompilationInfo::feedback_vector_spec(void) __ptr64+203143"
+    },
+    {
+      "pc": "0x00007ff60e600577",
+      "symbol": "uv_timer_stop+775"
+    },
+    {
+      "pc": "0x00007ff60e5fd03b",
+      "symbol": "uv_async_send+331"
+    },
+    {
+      "pc": "0x00007ff60e5fc7dc",
+      "symbol": "uv_loop_init+1212"
+    },
+    {
+      "pc": "0x00007ff60e5fc9a4",
+      "symbol": "uv_run+244"
+    },
+    {
+      "pc": "0x00007ff60e51ad43",
+      "symbol": "public: class v8::internal::FeedbackVectorSpec * __ptr64 __cdecl v8::internal::UnoptimizedCompilationInfo::feedback_vector_spec(void) __ptr64+31043"
+    },
+    {
+      "pc": "0x00007ff60e57a3d3",
+      "symbol": "int __cdecl node::Start(int,char * __ptr64 * __ptr64 const)+275"
+    },
+    {
+      "pc": "0x00007ff60e4267ac",
+      "symbol": "RC4_options+339628"
+    },
+    {
+      "pc": "0x00007ff60f26be08",
+      "symbol": "public: virtual bool __cdecl v8::internal::SetupIsolateDelegate::SetupHeap(class v8::internal::Heap * __ptr64) __ptr64+1296248"
+    },
+    {
+      "pc": "0x00007ff8f61e7bd4",
+      "symbol": "BaseThreadInitThunk+20"
+    },
+    {
+      "pc": "0x00007ff8f66ece51",
+      "symbol": "RtlUserThreadStart+33"
+    }
+  ],
+  "javascriptHeap": {
+    "totalMemory": 145321984,
+    "totalCommittedMemory": 145321984,
+    "usedMemory": 134646256,
+    "availableMemory": 2021372552,
+    "memoryLimit": 2155872256,
+    "heapSpaces": {
+      "read_only_space": {
+        "memorySize": 262144,
+        "committedMemory": 262144,
+        "capacity": 32808,
+        "used": 32808,
+        "available": 0
+      },
+      "new_space": {
+        "memorySize": 1048576,
+        "committedMemory": 1048576,
+        "capacity": 1047456,
+        "used": 1047368,
+        "available": 88
+      },
+      "old_space": {
+        "memorySize": 91897856,
+        "committedMemory": 91897856,
+        "capacity": 91622408,
+        "used": 84702480,
+        "available": 6919928
+      },
+      "code_space": {
+        "memorySize": 3575808,
+        "committedMemory": 3575808,
+        "capacity": 3399648,
+        "used": 2569696,
+        "available": 829952
+      },
+      "map_space": {
+        "memorySize": 5509120,
+        "committedMemory": 5509120,
+        "capacity": 5502296,
+        "used": 3477440,
+        "available": 2024856
+      },
+      "large_object_space": {
+        "memorySize": 42119168,
+        "committedMemory": 42119168,
+        "capacity": 42000848,
+        "used": 42000848,
+        "available": 0
+      },
+      "code_large_object_space": {
+        "memorySize": 909312,
+        "committedMemory": 909312,
+        "capacity": 815616,
+        "used": 815616,
+        "available": 0
+      },
+      "new_large_object_space": {
+        "memorySize": 0,
+        "committedMemory": 0,
+        "capacity": 1047456,
+        "used": 0,
+        "available": 1047456
+      }
+    }
+  },
+  "resourceUsage": {
+    "userCpuSeconds": 30.609,
+    "kernelCpuSeconds": 6.015,
+    "cpuConsumptionPercent": 14.6496,
+    "maxRss": 238211072,
+    "pageFaults": {
+      "IORequired": 217184,
+      "IONotRequired": 0
+    },
+    "fsActivity": {
+      "reads": 5235,
+      "writes": 256
+    }
+  },
+  "libuv": [
+  ],
+  "environmentVariables": {
+    "=D:": "D:\\S-Group\\Front-end\\Vue-js\\vue-cli",
+    "ALLUSERSPROFILE": "C:\\ProgramData",
+    "APPDATA": "C:\\Users\\Luxury\\AppData\\Roaming",
+    "BABEL_ENV": "development",
+    "ChocolateyInstall": "C:\\ProgramData\\chocolatey",
+    "ChocolateyLastPathUpdate": "132276112612239823",
+    "COLORTERM": "truecolor",
+    "CommonProgramFiles": "C:\\Program Files\\Common Files",
+    "CommonProgramFiles(x86)": "C:\\Program Files (x86)\\Common Files",
+    "CommonProgramW6432": "C:\\Program Files\\Common Files",
+    "COMPUTERNAME": "ADMIN",
+    "ComSpec": "C:\\WINDOWS\\system32\\cmd.exe",
+    "dp0": "D:\\S-Group\\Front-end\\Vue-js\\vue-cli\\node_modules\\.bin\\",
+    "DriverData": "C:\\Windows\\System32\\Drivers\\DriverData",
+    "FPS_BROWSER_APP_PROFILE_STRING": "Internet Explorer",
+    "FPS_BROWSER_USER_PROFILE_STRING": "Default",
+    "GIT_ASKPASS": "c:\\Users\\Luxury\\AppData\\Local\\Programs\\Microsoft VS Code\\resources\\app\\extensions\\git\\dist\\askpass.sh",
+    "HOME": "C:\\Users\\Luxury",
+    "HOMEDRIVE": "C:",
+    "HOMEPATH": "\\Users\\Luxury",
+    "INIT_CWD": "D:\\S-Group\\Front-end\\Vue-js\\vue-cli",
+    "LANG": "en_US.UTF-8",
+    "LOCALAPPDATA": "C:\\Users\\Luxury\\AppData\\Local",
+    "LOGONSERVER": "\\\\ADMIN",
+    "NODE": "C:\\Program Files\\nodejs\\node.exe",
+    "NODE_ENV": "development",
+    "NODE_EXE": "C:\\Program Files\\nodejs\\\\node.exe",
+    "NPM_CLI_JS": "C:\\Program Files\\nodejs\\\\node_modules\\npm\\bin\\npm-cli.js",
+    "npm_config_access": "",
+    "npm_config_allow_same_version": "",
+    "npm_config_also": "",
+    "npm_config_always_auth": "",
+    "npm_config_argv": "{\"remain\":[],\"cooked\":[\"run\",\"serve\"],\"original\":[\"run\",\"serve\"]}",
+    "npm_config_audit": "true",
+    "npm_config_audit_level": "low",
+    "npm_config_auth_type": "legacy",
+    "npm_config_before": "",
+    "npm_config_bin_links": "true",
+    "npm_config_browser": "",
+    "npm_config_ca": "",
+    "npm_config_cache": "C:\\Users\\Luxury\\AppData\\Roaming\\npm-cache",
+    "npm_config_cache_lock_retries": "10",
+    "npm_config_cache_lock_stale": "60000",
+    "npm_config_cache_lock_wait": "10000",
+    "npm_config_cache_max": "Infinity",
+    "npm_config_cache_min": "10",
+    "npm_config_cafile": "",
+    "npm_config_cert": "",
+    "npm_config_cidr": "",
+    "npm_config_color": "true",
+    "npm_config_commit_hooks": "true",
+    "npm_config_depth": "Infinity",
+    "npm_config_description": "true",
+    "npm_config_dev": "",
+    "npm_config_dry_run": "",
+    "npm_config_editor": "notepad.exe",
+    "npm_config_engine_strict": "",
+    "npm_config_fetch_retries": "2",
+    "npm_config_fetch_retry_factor": "10",
+    "npm_config_fetch_retry_maxtimeout": "60000",
+    "npm_config_fetch_retry_mintimeout": "10000",
+    "npm_config_force": "",
+    "npm_config_format_package_lock": "true",
+    "npm_config_fund": "true",
+    "npm_config_git": "git",
+    "npm_config_git_tag_version": "true",
+    "npm_config_global": "",
+    "npm_config_globalconfig": "C:\\Users\\Luxury\\AppData\\Roaming\\npm\\etc\\npmrc",
+    "npm_config_globalignorefile": "C:\\Users\\Luxury\\AppData\\Roaming\\npm\\etc\\npmignore",
+    "npm_config_global_style": "",
+    "npm_config_group": "",
+    "npm_config_ham_it_up": "",
+    "npm_config_heading": "npm",
+    "npm_config_https_proxy": "",
+    "npm_config_if_present": "",
+    "npm_config_ignore_prepublish": "",
+    "npm_config_ignore_scripts": "",
+    "npm_config_init_author_email": "",
+    "npm_config_init_author_name": "",
+    "npm_config_init_author_url": "",
+    "npm_config_init_license": "ISC",
+    "npm_config_init_module": "C:\\Users\\Luxury\\.npm-init.js",
+    "npm_config_init_version": "1.0.0",
+    "npm_config_json": "",
+    "npm_config_key": "",
+    "npm_config_legacy_bundling": "",
+    "npm_config_link": "",
+    "npm_config_local_address": "",
+    "npm_config_loglevel": "notice",
+    "npm_config_logs_max": "10",
+    "npm_config_long": "",
+    "npm_config_maxsockets": "50",
+    "npm_config_message": "%s",
+    "npm_config_metrics_registry": "https://registry.npmjs.org/",
+    "npm_config_node_gyp": "C:\\Program Files\\nodejs\\node_modules\\npm\\node_modules\\node-gyp\\bin\\node-gyp.js",
+    "npm_config_node_options": "",
+    "npm_config_node_version": "12.16.1",
+    "npm_config_noproxy": "",
+    "npm_config_offline": "",
+    "npm_config_onload_script": "",
+    "npm_config_only": "",
+    "npm_config_optional": "true",
+    "npm_config_otp": "",
+    "npm_config_package_lock": "true",
+    "npm_config_package_lock_only": "",
+    "npm_config_parseable": "",
+    "npm_config_prefer_offline": "",
+    "npm_config_prefer_online": "",
+    "npm_config_prefix": "C:\\Users\\Luxury\\AppData\\Roaming\\npm",
+    "npm_config_preid": "",
+    "npm_config_production": "",
+    "npm_config_progress": "true",
+    "npm_config_proxy": "",
+    "npm_config_read_only": "",
+    "npm_config_rebuild_bundle": "true",
+    "npm_config_registry": "https://registry.npmjs.org/",
+    "npm_config_rollback": "true",
+    "npm_config_save": "true",
+    "npm_config_save_bundle": "",
+    "npm_config_save_dev": "",
+    "npm_config_save_exact": "",
+    "npm_config_save_optional": "",
+    "npm_config_save_prefix": "^",
+    "npm_config_save_prod": "",
+    "npm_config_scope": "",
+    "npm_config_scripts_prepend_node_path": "warn-only",
+    "npm_config_script_shell": "",
+    "npm_config_searchexclude": "",
+    "npm_config_searchlimit": "20",
+    "npm_config_searchopts": "",
+    "npm_config_searchstaleness": "900",
+    "npm_config_send_metrics": "",
+    "npm_config_shell": "C:\\WINDOWS\\system32\\cmd.exe",
+    "npm_config_shrinkwrap": "true",
+    "npm_config_sign_git_commit": "",
+    "npm_config_sign_git_tag": "",
+    "npm_config_sso_poll_frequency": "500",
+    "npm_config_sso_type": "oauth",
+    "npm_config_strict_ssl": "true",
+    "npm_config_tag": "latest",
+    "npm_config_tag_version_prefix": "v",
+    "npm_config_timing": "",
+    "npm_config_tmp": "C:\\Users\\Luxury\\AppData\\Local\\Temp",
+    "npm_config_umask": "0000",
+    "npm_config_unicode": "",
+    "npm_config_unsafe_perm": "true",
+    "npm_config_update_notifier": "true",
+    "npm_config_usage": "",
+    "npm_config_user": "",
+    "npm_config_userconfig": "C:\\Users\\Luxury\\.npmrc",
+    "npm_config_user_agent": "npm/6.13.4 node/v12.16.1 win32 x64",
+    "npm_config_version": "",
+    "npm_config_versions": "",
+    "npm_config_viewer": "browser",
+    "npm_execpath": "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js",
+    "npm_lifecycle_event": "serve",
+    "npm_lifecycle_script": "vue-cli-service serve",
+    "npm_node_execpath": "C:\\Program Files\\nodejs\\node.exe",
+    "npm_package_browserslist_0": "> 1%",
+    "npm_package_browserslist_1": "last 2 versions",
+    "npm_package_browserslist_2": "not dead",
+    "npm_package_dependencies_core_js": "^3.6.5",
+    "npm_package_dependencies_register_service_worker": "^1.7.1",
+    "npm_package_dependencies_vue": "^2.6.11",
+    "npm_package_dependencies_vuex": "^3.4.0",
+    "npm_package_dependencies_vue_class_component": "^7.2.3",
+    "npm_package_dependencies_vue_property_decorator": "^8.4.2",
+    "npm_package_dependencies_vue_router": "^3.2.0",
+    "npm_package_description": "## Project setup ``` npm install ```",
+    "npm_package_devDependencies_eslint": "^6.7.2",
+    "npm_package_devDependencies_eslint_plugin_prettier": "^3.1.3",
+    "npm_package_devDependencies_eslint_plugin_vue": "^6.2.2",
+    "npm_package_devDependencies_node_sass": "^4.12.0",
+    "npm_package_devDependencies_prettier": "^1.19.1",
+    "npm_package_devDependencies_sass_loader": "^8.0.2",
+    "npm_package_devDependencies_typescript": "~3.9.3",
+    "npm_package_devDependencies_vue_template_compiler": "^2.6.11",
+    "npm_package_devDependencies__typescript_eslint_eslint_plugin": "^2.33.0",
+    "npm_package_devDependencies__typescript_eslint_parser": "^2.33.0",
+    "npm_package_devDependencies__vue_cli_plugin_babel": "~4.4.0",
+    "npm_package_devDependencies__vue_cli_plugin_eslint": "~4.4.0",
+    "npm_package_devDependencies__vue_cli_plugin_pwa": "~4.4.0",
+    "npm_package_devDependencies__vue_cli_plugin_router": "~4.4.0",
+    "npm_package_devDependencies__vue_cli_plugin_typescript": "~4.4.0",
+    "npm_package_devDependencies__vue_cli_plugin_vuex": "~4.4.0",
+    "npm_package_devDependencies__vue_cli_service": "~4.4.0",
+    "npm_package_devDependencies__vue_eslint_config_prettier": "^6.0.0",
+    "npm_package_devDependencies__vue_eslint_config_typescript": "^5.0.2",
+    "npm_package_eslintConfig_env_node": "true",
+    "npm_package_eslintConfig_extends_0": "plugin:vue/essential",
+    "npm_package_eslintConfig_extends_1": "eslint:recommended",
+    "npm_package_eslintConfig_extends_2": "@vue/typescript/recommended",
+    "npm_package_eslintConfig_extends_3": "@vue/prettier",
+    "npm_package_eslintConfig_extends_4": "@vue/prettier/@typescript-eslint",
+    "npm_package_eslintConfig_parserOptions_ecmaVersion": "2020",
+    "npm_package_eslintConfig_root": "true",
+    "npm_package_gitHead": "e3657e008ab0a98e383d27618195ca790cbe3fbf",
+    "npm_package_name": "vue-cli",
+    "npm_package_private": "true",
+    "npm_package_readmeFilename": "README.md",
+    "npm_package_scripts_build": "vue-cli-service build",
+    "npm_package_scripts_lint": "vue-cli-service lint",
+    "npm_package_scripts_serve": "vue-cli-service serve",
+    "npm_package_version": "0.1.0",
+    "NPM_PREFIX_NPM_CLI_JS": "C:\\Users\\Luxury\\AppData\\Roaming\\npm\\node_modules\\npm\\bin\\npm-cli.js",
+    "NUMBER_OF_PROCESSORS": "4",
+    "OneDrive": "C:\\Users\\Luxury\\OneDrive",
+    "ORIGINAL_XDG_CURRENT_DESKTOP": "undefined",
+    "OS": "Windows_NT",
+    "Path": "C:\\Program Files\\nodejs\\node_modules\\npm\\node_modules\\npm-lifecycle\\node-gyp-bin;D:\\S-Group\\Front-end\\Vue-js\\vue-cli\\node_modules\\.bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\nodejs\\;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\Microsoft SQL Server\\120\\DTS\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\110\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\120\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\120\\Tools\\Binn\\;C:\\Program Files\\Git\\cmd;C:\\Users\\Luxury\\AppData\\Local\\Microsoft\\WindowsApps;;C:\\Users\\Luxury\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\Luxury\\AppData\\Roaming\\npm",
+    "PATHEXT": ".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JSE;.WSF;.WSH;.MSC;.CPL",
+    "PROCESSOR_ARCHITECTURE": "AMD64",
+    "PROCESSOR_IDENTIFIER": "Intel64 Family 6 Model 61 Stepping 4, GenuineIntel",
+    "PROCESSOR_LEVEL": "6",
+    "PROCESSOR_REVISION": "3d04",
+    "ProgramData": "C:\\ProgramData",
+    "ProgramFiles": "C:\\Program Files",
+    "ProgramFiles(x86)": "C:\\Program Files (x86)",
+    "ProgramW6432": "C:\\Program Files",
+    "PROMPT": "$P$G",
+    "PSModulePath": "C:\\Users\\Luxury\\Documents\\WindowsPowerShell\\Modules;C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules;C:\\Program Files (x86)\\Microsoft SQL Server\\120\\Tools\\PowerShell\\Modules\\",
+    "PUBLIC": "C:\\Users\\Public",
+    "SESSIONNAME": "Console",
+    "SystemDrive": "C:",
+    "SystemRoot": "C:\\WINDOWS",
+    "TEMP": "C:\\Users\\Luxury\\AppData\\Local\\Temp",
+    "TERM_PROGRAM": "vscode",
+    "TERM_PROGRAM_VERSION": "1.47.3",
+    "TMP": "C:\\Users\\Luxury\\AppData\\Local\\Temp",
+    "USERDOMAIN": "ADMIN",
+    "USERDOMAIN_ROAMINGPROFILE": "ADMIN",
+    "USERNAME": "Luxury",
+    "USERPROFILE": "C:\\Users\\Luxury",
+    "VSCODE_GIT_ASKPASS_MAIN": "c:\\Users\\Luxury\\AppData\\Local\\Programs\\Microsoft VS Code\\resources\\app\\extensions\\git\\dist\\askpass-main.js",
+    "VSCODE_GIT_ASKPASS_NODE": "C:\\Users\\Luxury\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe",
+    "VSCODE_GIT_IPC_HANDLE": "\\\\.\\pipe\\vscode-git-f16a5624e3-sock",
+    "VUE_CLI_ENTRY_FILES": "[\"D:\\\\S-Group\\\\Front-end\\\\Vue-js\\\\vue-cli\\\\src\\\\main.ts\"]",
+    "VUE_CLI_TRANSPILE_BABEL_RUNTIME": "true",
+    "WEBPACK_DEV_SERVER": "true",
+    "windir": "C:\\WINDOWS",
+    "_prog": "node"
+  },
+  "sharedObjects": [
+    "C:\\Program Files\\nodejs\\node.exe",
+    "C:\\WINDOWS\\SYSTEM32\\ntdll.dll",
+    "C:\\WINDOWS\\System32\\KERNEL32.DLL",
+    "C:\\WINDOWS\\System32\\KERNELBASE.dll",
+    "C:\\WINDOWS\\System32\\WS2_32.dll",
+    "C:\\WINDOWS\\System32\\RPCRT4.dll",
+    "C:\\WINDOWS\\SYSTEM32\\dbghelp.dll",
+    "C:\\WINDOWS\\System32\\PSAPI.DLL",
+    "C:\\WINDOWS\\System32\\ucrtbase.dll",
+    "C:\\WINDOWS\\System32\\ADVAPI32.dll",
+    "C:\\WINDOWS\\System32\\msvcrt.dll",
+    "C:\\WINDOWS\\System32\\sechost.dll",
+    "C:\\WINDOWS\\SYSTEM32\\IPHLPAPI.DLL",
+    "C:\\WINDOWS\\SYSTEM32\\USERENV.dll",
+    "C:\\WINDOWS\\System32\\USER32.dll",
+    "C:\\WINDOWS\\System32\\profapi.dll",
+    "C:\\WINDOWS\\System32\\win32u.dll",
+    "C:\\WINDOWS\\System32\\GDI32.dll",
+    "C:\\WINDOWS\\System32\\gdi32full.dll",
+    "C:\\WINDOWS\\System32\\msvcp_win.dll",
+    "C:\\WINDOWS\\System32\\CRYPT32.dll",
+    "C:\\WINDOWS\\System32\\MSASN1.dll",
+    "C:\\WINDOWS\\System32\\bcrypt.dll",
+    "C:\\WINDOWS\\SYSTEM32\\WINMM.dll",
+    "C:\\WINDOWS\\SYSTEM32\\winmmbase.dll",
+    "C:\\WINDOWS\\System32\\cfgmgr32.dll",
+    "C:\\WINDOWS\\System32\\bcryptPrimitives.dll",
+    "C:\\WINDOWS\\System32\\IMM32.DLL",
+    "C:\\WINDOWS\\System32\\powrprof.dll",
+    "C:\\WINDOWS\\System32\\UMPDC.dll",
+    "C:\\WINDOWS\\SYSTEM32\\CRYPTBASE.DLL",
+    "C:\\WINDOWS\\system32\\uxtheme.dll",
+    "C:\\WINDOWS\\System32\\combase.dll",
+    "C:\\WINDOWS\\system32\\mswsock.dll",
+    "C:\\WINDOWS\\System32\\kernel.appcore.dll",
+    "C:\\WINDOWS\\system32\\napinsp.dll",
+    "C:\\WINDOWS\\system32\\pnrpnsp.dll",
+    "C:\\WINDOWS\\SYSTEM32\\DNSAPI.dll",
+    "C:\\WINDOWS\\System32\\NSI.dll",
+    "C:\\WINDOWS\\System32\\winrnr.dll",
+    "C:\\WINDOWS\\system32\\NLAapi.dll",
+    "C:\\WINDOWS\\system32\\wshbth.dll",
+    "C:\\WINDOWS\\SYSTEM32\\dhcpcsvc6.DLL",
+    "C:\\WINDOWS\\SYSTEM32\\dhcpcsvc.DLL",
+    "\\\\?\\D:\\S-Group\\Front-end\\Vue-js\\vue-cli\\node_modules\\node-sass\\vendor\\win32-x64-72\\binding.node"
+  ]
+}
